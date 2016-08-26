@@ -22,8 +22,12 @@ module.exports = function(config) {
       // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
-      'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
       'bower_components/angular-route/angular-route.js',
+      'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+      'bower_components/fullpage.js/dist/jquery.fullpage.js',
+      'bower_components/fullpage.js/vendors/jquery.easings.min.js',
+      'bower_components/fullpage.js/vendors/scrolloverflow.min.js',
+      'bower_components/lodash/lodash.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

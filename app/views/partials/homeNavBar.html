@@ -1,0 +1,18 @@
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav nav-home text-center">
+        <li class="nav-home-li">
+          <a class="navbar-label dropdown-toggle" 
+          ng-click="moveToSection(1)">SECCIÓN 1</a>
+          <div ng-class="isActiveTab[0] ? 'nav-tab-selector' : ''"></div>
+        </li>
+        <li class="nav-home-li">
+          <a class="navbar-label dropdown-toggle" 
+          ng-click="moveToSection(2)">SECCIÓN 2</a>
+          <div ng-class="isActiveTab[1] ? 'nav-tab-selector' : ''"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
