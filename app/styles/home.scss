@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "variables";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -12,6 +13,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: $matedevs-red;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -87,5 +89,55 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+//CUSTOM CSS RULES
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  li {
+    float: none;
+    display: inline-block;
+    cursor: pointer;
+    a {
+      font-weight: bolder;
+    }
+  }
+  .selected-tab {
+    background-color: $matedevs-red;
+    .navbar-label,
+    .navbar-label:hover {
+      color: $white;
+    }
+  }
+  .not-selected-tab {
+    background-color: $white;
+    .navbar-label,
+    .navbar-label:hover {
+      color: $matedevs-red;
+    }
+  }
+}
+
+.navbar-default {
+  border: 0;
+  background-color: $white;
+  z-index: 2;
+}
+
+#fullpage {
+  .landing-section {
+    .home-logo-container {
+      height: 100%;
+      padding-top: 15%;
+    }
+    .matedevs-home-logo {
+      width: 60%; 
+    }
   }
 }

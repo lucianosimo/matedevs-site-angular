@@ -13,7 +13,7 @@ angular.module('matedevsSiteApp')
               
               onLeave: function(index, nextIndex, direction) {
                 if (!_.isUndefined(nextIndex)) {
-                  scope.changeActiveSection(nextIndex);
+                  scope.$parent.changeActiveSection(nextIndex, scope.$parent.isOnClickTab);
                 }
               }
             });
