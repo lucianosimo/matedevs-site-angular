@@ -131,10 +131,14 @@ body {
 }
 
 #fullpage {
+  width: 100%;
   .landing-section {
     .home-logo-container {
       height: 100%;
       padding-top: 15%;
+      background-image: url(/images/computer-mate.jpg);
+      background-size: cover;
+      background-position: bottom;
     }
     .matedevs-home-logo {
       width: 60%; 
