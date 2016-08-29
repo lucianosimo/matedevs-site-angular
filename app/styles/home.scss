@@ -4,6 +4,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 @import "variables";
 
+@font-face {
+    font-family: 'MateDevsFont';
+    src: url('/fonts/matedevs-font.otf');
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -96,6 +101,7 @@ body {
 
 .navbar {
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 .navbar-nav {
@@ -104,6 +110,8 @@ body {
     float: none;
     display: inline-block;
     cursor: pointer;
+    font-family: 'MateDevsFont';
+    font-size: 1.8rem;
     a {
       font-weight: bolder;
     }
@@ -133,15 +141,60 @@ body {
 #fullpage {
   width: 100%;
   .landing-section {
+    background-image: url(/images/computer-mate-background.jpg);
+    background-size: cover;
+    background-position: bottom;
     .home-logo-container {
       height: 100%;
-      padding-top: 15%;
-      background-image: url(/images/computer-mate.jpg);
-      background-size: cover;
-      background-position: bottom;
+      padding-top: 5%;
     }
     .matedevs-home-logo {
-      width: 60%; 
+      width: 30%; 
     }
+  }
+  .ptt-section {
+    background-image: url(/images/ptt-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.social {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+
+  .facebook-icon {
+    display: inline-block;
+    background-image: url(/images/facebook-idle.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 45%;
+    height: 45%;
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
+  }
+  .facebook-icon:hover {
+    background-image: url(/images/facebook-hover.png);
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
+  }
+  .twitter-icon {
+    display: inline-block;
+    background-image: url(/images/twitter-idle.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 45%;
+    height: 45%;
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
+  }
+  .twitter-icon:hover {
+    background-image: url(/images/twitter-hover.png);
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
   }
 }
