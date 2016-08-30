@@ -141,7 +141,7 @@ body {
 #fullpage {
   width: 100%;
   .landing-section {
-    background-image: url(/images/computer-mate-background.jpg);
+    background-image: url(/images/landing-section/computer-mate-background.jpg);
     background-size: cover;
     background-position: bottom;
     .home-logo-container {
@@ -156,6 +156,19 @@ body {
     background-image: url(/images/ptt-background.jpg);
     background-size: cover;
     background-position: bottom;
+    .fp-tableCell {
+      vertical-align: top;
+    }
+    .menu-screenshot {
+      margin-top: 5%;
+      margin-left: 2%;
+      width: 60%;
+      vertical-align: baseline;
+    }
+    .ptt-video {
+      vertical-align: top;
+      margin-top: 5%;
+    }
   }
 }
 

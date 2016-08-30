@@ -2,7 +2,8 @@
 
 angular
   .module('matedevsSiteApp', [
-    'ngRoute'
+    'ngRoute',
+    'youtube-embed'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
