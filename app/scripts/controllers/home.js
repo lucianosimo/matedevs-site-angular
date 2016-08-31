@@ -3,7 +3,7 @@
 angular.module('matedevsSiteApp')
   .controller('HomeCtrl', function ($scope, $timeout) {
 
-  	$scope.pttPlayer;
+  	/*$scope.pttPlayer;
 
   	$scope.ptt = {
   		gameplayVideo: 'https://www.youtube.com/watch?v=A6NTpP5Y5wQ?rel=0'
@@ -15,6 +15,6 @@ angular.module('matedevsSiteApp')
   				$scope.pttPlayer.pauseVideo();
   			}
   		}, 1250);
-  	}
+  	}*/
 
   });

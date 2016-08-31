@@ -160,10 +160,20 @@ body {
       vertical-align: top;
     }
     .menu-screenshot {
-      margin-top: 5%;
-      margin-left: 2%;
-      width: 60%;
-      vertical-align: baseline;
+      display: inline-block;
+      margin-top: 6%;
+      margin-left: 6%;
+      width: 45%;
+      img {
+        width: 95%;
+      }
+    }
+    .gameplay-screenshot {
+      display: inline-block;
+      width: 45%;
+      img {
+        width: 95%;
+      }
     }
     .ptt-video {
       vertical-align: top;
@@ -174,8 +184,8 @@ body {
 
 .social {
   display: inline-block;
-  width: 75px;
-  height: 75px;
+  width: 120px;
+  height: 120px;
   position: absolute;
   right: 15px;
   top: 8px;
@@ -185,8 +195,8 @@ body {
     background-image: url(/images/facebook-idle.png);
     background-size: cover;
     background-position: bottom;
-    width: 45%;
-    height: 45%;
+    width: 30%;
+    height: 30%;
     -webkit-transition: linear 0.2s; /* Safari */
     transition: linear 0.2s;
   }
@@ -200,13 +210,28 @@ body {
     background-image: url(/images/twitter-idle.png);
     background-size: cover;
     background-position: bottom;
-    width: 45%;
-    height: 45%;
+    width: 30%;
+    height: 30%;
     -webkit-transition: linear 0.2s; /* Safari */
     transition: linear 0.2s;
   }
   .twitter-icon:hover {
     background-image: url(/images/twitter-hover.png);
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
+  }
+  .youtube-icon {
+    display: inline-block;
+    background-image: url(/images/youtube-idle.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    height: 30%;
+    -webkit-transition: linear 0.2s; /* Safari */
+    transition: linear 0.2s;
+  }
+  .youtube-icon:hover {
+    background-image: url(/images/youtube-hover.png);
     -webkit-transition: linear 0.2s; /* Safari */
     transition: linear 0.2s;
   }
